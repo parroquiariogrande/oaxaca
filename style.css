@@ -1,0 +1,603 @@
+/* Diseño General */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: lightgrey;
+    font-family: sans-serif;
+}
+
+p{
+    font-size: 6;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #008080;
+    text-align: justify;
+}
+
+h1{
+    color: white;
+    margin: 10px 0;
+    background: #008080;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+a{
+    text-decoration: none;
+    display: inline;
+    color: white;
+}
+
+.container{
+    margin: auto;
+    background-color: white;
+    width: 95%;
+    height: 520px;
+    padding: 10px;
+}
+
+.container2{
+    margin: auto;
+    background-color: white;
+    width: 740px;
+    height: 410px;
+    padding: 10px;
+}
+  
+/* titulo principal */
+.banner-titulo{
+    background: #008080;
+    position: relative;
+    padding: 5px 0;
+}
+
+.banner-titulo h1{
+    font-size: 40px;
+    padding-left: 250px;
+}
+
+.banner-titulo img{
+    width: 66px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* barra de navegacion */
+nav{
+    background: green;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.navegacion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navegacion a{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navegacion a:hover{
+    color: orange;
+}
+
+/* hace que el menu se quede fijo */
+/* .menu-fijo{
+    position:fixed;
+    z-index: 1;
+    top:0;
+    width:100%;
+    box-shadow:0px 4px 3px rgba(0,0,0,.5);
+} */
+
+/* Contenido */
+section{
+    width: 100%;
+    position: relative;
+}
+
+#inicio{
+    width: 100%;
+    /* width: 1280px; */
+    /* margin: auto; */
+    height: 600px;
+    overflow: hidden; 
+}
+
+#inicio ul{
+    display: flex;
+    width: 300%;
+    animation: cambio 10s infinite alternate ease-out;
+}
+
+#inicio ul li{
+    width: 100%;
+    list-style: none;
+}
+
+#inicio ul li img{
+    width: 100%;
+    height: 600px;
+}
+
+#inicio h2{
+    float: left;
+    color: orange;
+    position: absolute;
+    top: 20px;
+    right: 200px;
+    text-shadow: 2px 2px 2px blue;
+    font-size: 35px;
+}
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    35%{margin-left: 0;}
+
+    40%{margin-left: -100%;}
+    65%{margin-left: -100%;}
+
+    70%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+}
+
+/* Actividades */
+#actividades{
+    width: 100%;
+}
+
+#actividades h1{
+    margin: 10px 0;
+    background: #008080;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+/* Diseño de las imagenes */
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+  
+ul.slider{
+    position: relative;
+    width: 1278px;
+    height: 458px;
+}
+  
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#fff;
+}
+  
+.plantilla{
+    width: 60%;
+    height: 450px;
+    object-fit: cover;
+    position: absolute;
+}
+
+ul.slider li p{
+    width: 35%;
+    top: 0;
+    margin-left: 805px;
+    line-height: 170%;
+    border: 3px solid #800040;
+    border-radius: 1.5em;
+    padding: 10px;
+}
+  
+/*Mostramos el primer <li>*/
+  ul.slider li:first-child {
+    opacity: 1; 
+}
+  
+/*Mostramos el <li> del enlace que pulsemos*/
+ul.slider li:target {
+    opacity: 1; 
+}
+
+/* Aquí se modifican los botones que tienen los numeros */ 
+.menu{
+    text-align: center;
+    margin: 10px;  
+}
+  
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+  
+.menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+/* Se creara una clase que se aplicara cuando se haga clic en las imagenes sin texto */
+.sin_texto{
+    width: 60%;
+    height: 450px;
+    margin: 0px 0px 0px 250px;
+    object-fit: cover; 
+    position: absolute;
+}
+
+/* Catequesis */
+#catequesis{
+    width: 100%;
+}
+
+/* tabla - catequesis */
+.contenedor-tabla{
+	margin: 10px;
+	width: 540px;
+}
+
+table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+    border: 2px solid brown;
+}
+
+th, td{
+	padding: 20px;
+    color: black;
+}
+
+thead{
+	background-color: #246355;
+	border-bottom: solid 5px #0F362D;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+tr:hover td{
+	background-color: #369681;
+	color: white;
+}
+
+/* actividades - catequesis */
+.contenedor-actividad{
+	width: 760px;
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    height: 500px;
+}
+
+.container2 ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+  
+.container2 ul.slider2{
+    position: relative;
+    width: 740px;
+    height: 420px;
+}
+  
+.container2 ul.slider2 li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#fff;
+}
+  
+.container2 ul.slider2 li img{
+    width: 450px;
+    height: 410px;
+    object-fit: cover;
+}
+
+.container2 ul.slider2 li p{
+    width: 34%;
+    top: 0;
+    left: 460px;
+    line-height: 170%;
+    border: 3px solid #800040;
+    border-radius: 1.5em;
+    padding: 10px;
+    position: inherit;
+}
+  
+/*Mostramos el primer <li>*/
+.container2 ul.slider2 li:first-child {
+    opacity: 1; 
+}
+  
+/*Mostramos el <li> del enlace que pulsemos*/
+.container2 ul.slider2 li:target {
+    opacity: 1; 
+}
+
+/* Aquí se modifican los botones que tienen los numeros */ 
+.menu2{
+    text-align: center;
+    margin: 10px;
+    position: absolute;
+    top: 230px;
+    right: 35px;  
+    width: 230px;
+    height: 250px;
+}
+  
+.menu2 li{
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
+}
+  
+.menu2 li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+/* Misas y Celebraciones */
+#mice{
+    width: 100%;
+}
+
+#mice h3{
+    text-align: center;
+    text-shadow: 2px 2px 2px blue;
+    font-size: 26px;
+    color: orange;
+}
+
+#mice h4{
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 2px gray;
+    color: green;
+    font-size: 20px;
+}
+
+/* Comunidades */
+
+/* Capillas */
+
+/* Contacto */
+#contacto{
+    width: 100%;
+}
+
+.contacto-izq{
+    position: absolute;
+    width: 70%;
+}
+
+.izq{
+    margin-left: 20px;
+    width: 560px;
+    height: 400px;
+}
+
+.izq table{
+    border: 2px solid brown;
+    height: 394px;
+}
+
+.izq table thead th{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.izq table td a{
+    color: black;
+}
+
+.der{
+    position: inherit;
+    top: 0;
+    right: 53px;
+    border: 2px solid brown;
+    width: 29%;
+    height: 390px;
+}
+
+.der img{
+    width: 100%;
+    height: 390px;
+    margin: 0;
+    padding: 0;
+}
+/*  
+.der h1{
+    background-color: #246355;
+    color: black;
+    text-align: center;
+    border-bottom: solid 5px #0F362D;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 20px 0;
+}
+
+.der form{
+    background: lightblue;
+    padding: 30px 30px;
+}
+
+.der form .form-block{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.der form .form-block .form-control{
+    display: block;
+    height: 35px;
+    font-size: 16px;
+    border: 1px solid grey;
+    width: 100%;
+    padding: 5px 5px;
+}
+
+.der form .form-block textarea{
+    display: block;
+    height: 60px;
+    font-size: 16px;
+    border: 1px solid rgb(126, 118, 118);
+    width: 100%;
+    padding: 5px 5px;
+}
+
+.der form .form-block.bloque-ultimo{
+    margin-bottom: 0;
+}
+
+.boton-negro{
+    color: white;
+    background-color: #246355;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.boton-negro:hover{
+    color: black;
+    background-color: white;
+} */
+
+.horario-der{
+    width: 30%;
+    height: 390px;
+    position: relative;
+    margin: 0px 10px 0 920px;
+    border: 2px solid brown;
+}
+
+.horario-der h1{
+    background-color: #246355;
+    color: black;
+    text-align: center;
+    border-bottom: solid 5px #0F362D;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.horario-der img{
+    width: 405px;
+    height: 316px;
+}
+
+.ubicacion{
+    width: 1343px;
+    margin: 10px 0;
+    border: 2px solid brown;
+}
+
+/* Logos e Informacion */
+footer{
+    width: 100%;
+    height: 200px;
+    background: #0F362D;
+}
+
+.logo-umar{
+    margin: 20px 30px 20px 100px;
+    width: 160px;
+    float: left;
+}
+
+.logo-travel{
+    margin: 20px;
+    width: 205px;
+    float: left;
+}
+
+.datos{
+    width: 740px;
+    height: 200px;
+    color: white;
+    margin: 0 600px;
+    position: relative;
+}
+
+.datos .persona{
+    width: 300px;
+    float: left;
+    margin: 30px 30px 30px 20px;
+}
+
+.datos .persona li{
+    padding: 5px;
+}
+
+.datos .social{
+    width: 300px;
+    margin-top: 0;
+    float: left;
+    margin: 30px;
+    align-items: center;
+}
+
+.datos h3{
+    margin-bottom: 5px;
+}
+
+.datos .social li{
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+}
+
+.datos ul li img{
+    width: 40px;
+}
+
+.barra-footer{
+    background-color: black;
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.barra-footer h3{
+    width: 300px;
+    margin: auto;
+    padding: 0px 5px;
+    text-align: center;
+}

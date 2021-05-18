@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagenes/favicon.svg">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <title>Parroquia Santa Mar&iacute;a de Guadalupe Rio Grande Oaxaca</title>
+    <script>
+    $(document).ready(function(){
+	var altura = $('.navegacion-principal').offset().top;
+	
+	$(window).on('scroll', function(){
+		if ( $(window).scrollTop() > altura ){
+			$('.navegacion-principal').addClass('menu-fijo');
+		} else {
+			$('.navegacion-principal').removeClass('menu-fijo');
+		}
+	});
+
+    $("a").click(function(event){
+       $("#foto_diez img").addClass("sin_texto");
+       $("#foto_once img").addClass("sin_texto");
+       $("#foto_doce img").addClass("sin_texto");
+       $("#foto_trece img").addClass("sin_texto");
+       $("#foto_catorce img").addClass("sin_texto");
+       $("#foto_quince img").addClass("sin_texto");
+       //$("#foto_dieciseis img").addClass("sin_texto");
+       $("#foto_diecisiete img").addClass("sin_texto");
+       $("#foto_dieciocho img").addClass("sin_texto");
+       $("#foto_diecinueve img").addClass("sin_texto");
+       $("#foto_veinte img").addClass("sin_texto");
+       $("#foto_veintiuno img").addClass("sin_texto");
+       $("#foto_veintidos img").addClass("sin_texto");
+       $("#f6 img").addClass("sin_texto");
+       $("#f7 img").addClass("sin_texto");
+       $("#f8 img").addClass("sin_texto");
+       $("#f9 img").addClass("sin_texto");
+    });
+
+    $("a").click(function(event){
+        $("#foto_diez img").removeClass("plantilla");
+        $("#foto_once img").removeClass("plantilla");
+        $("#foto_doce img").removeClass("plantilla");
+        $("#foto_trece img").removeClass("plantilla");
+        $("#foto_catorce img").removeClass("plantilla");
+        $("#foto_quince img").removeClass("plantilla");
+        //$("#foto_dieciseis img").removeClass("plantilla");
+        $("#foto_diecisiete img").removeClass("plantilla");
+        $("#foto_dieciocho img").removeClass("plantilla");
+        $("#foto_diecinueve img").removeClass("plantilla");
+        $("#foto_veinte img").removeClass("plantilla");
+        $("#foto_veintiuno img").removeClass("plantilla");
+        $("#foto_veintidos img").removeClass("plantilla");
+        $("#f6 img").removeClass("plantilla");
+        $("#f7 img").removeClass("plantilla");
+        $("#f8 img").removeClass("plantilla");
+        $("#f9 img").removeClass("plantilla");
+    });
+
+    });
+    </script>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+
+            <!-- Titulo principal -->
+            <div class="banner-titulo">
+                <h1>Parroquia Santa María de Guadalupe</h1>
+                <img src="imagenes/foto.jpg" alt="logo">
+            </div>
+
+            <!-- Barra de navegación -->
+            <nav class="navegacion-principal">
+                <div class="navegacion">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#actividades">Actividades</a>
+                    <a href="#catequesis">Catequesis</a>
+                    <a href="#mice">Misas-Celebraciones</a>
+                    <!-- <a href="#comunidades">Comunidades</a>
+                    <a href="#capillas">Capillas</a> -->
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Contenido -->
+        <section id="inicio">
+            <ul>
+                <li>
+                    <img src="imagenes/templo.jpg" alt="templo">
+                </li>
+                <li>
+                    <img src="imagenes/parroquia1.jpg" alt="parroquia">
+                </li>
+                <li>
+                    <img src="imagenes/atrio.jpg" alt="homenaje">
+                </li>
+            </ul>
+            <h2>"El lugar donde Dios recibe tu fe y te entrega su amor"</h2>
+        </section>
+
+        <!-- Actividades -->
+        <section id="actividades">
+            <h1><Marquee behavior="alternate">FESTIVIDADES</marquee></h1>
+            <div class="container">
+                <ul class="slider">
+                  <li id="foto_uno">
+                    <img src="imagenes/feria.jpg" alt="12 de mayo" class="plantilla"/>
+                    <p><b>Esta foto corresponde al d&iacute;a 12 de mayo cuando se realiza la feria del pueblo en honor a la llegada a la poblaci&oacute;nla de la Virgen Santa Mar&iacutea de 
+                        Guadalupe, la patrona del pueblo. Las celebraciones eucarísticas comienzan desde el día primero y coinciden con el docenario.
+                    </b></p>
+                  </li>
+                  <li id="foto_dos">
+                    <img src="imagenes/diciembre.jpg" alt="12 de diciembre" class="plantilla"/>
+                    <p><b> 12 de diciembre en honor a la Virgen de Guadulupe recordando su aparición a Juan Diego en el cerro del Tepeyac. 
+                    </b></p>
+                  </li>
+                  <li id="foto_tres">
+                    <img src="imagenes/encomiendas.jpg" alt="misa" class="plantilla">
+                    <p><b>Año tras año se llevan a cabo celebraciones eucar&iacute;sticas relacionadas con la cuaresma. Compartimos la fe de la preparaci&oacute; para la llegada 
+                        de la Pascua.
+                    </b></p>
+                  </li>
+                  <li id="foto_cuatro">
+                      <img src="imagenes/cuaresma2.jpg" alt="viacrucis" class="plantilla">
+                      <p><b>En el cerro de la encomienda.Un lugar testigo de la fe del pueblo y de otras comunidades. 
+                      </b></p>
+                  </li>
+                  <li id="foto_cinco">
+                      <img src="imagenes/semanasanta.jpg" alt="Semana Santa" class="plantilla">
+                      <p><b>Semana Santa del año 2019 en la comunidad de Santiago Jocotepec.
+                      </b></p>
+                  </li>
+                  <li id="foto_seis">
+                    <img src="imagenes/todos.jpg" alt="Dia de muertos" class="plantilla">
+                    <p><b>El p&aacute;rroco Esa&uacute y el p&aacute;rroco Armando terminando de hacer el altar del d&iacute;a de muertos.<br>
+                    </b></p>
+                  </li>
+                  <li id="foto_siete">
+                    <img src="imagenes/adviento2.jpg" alt="Corona de adviento" class="plantilla">
+                    <p><b>De esta manera se prepara la iglesia para recibir el nuevo año liturgico. Para dar la bienvenida al adviento. 
+                    </b></p>
+                  </li>
+                  <li id="foto_ocho">
+                    <img src="imagenes/navidad2.jpg" alt="Nacimiento 2018" class="plantilla">
+                    <p><b>Navidad del 2018.
+                    </b></p>
+                  </li>
+                  <li id="foto_nueve">
+                    <img src="imagenes/adviento3.jpg" alt="Adviento 2020" class="plantilla">
+                    <p><b>Primer domingo de adviento en el a&ntilde;o 2020. Bendici&oacute;n de las Coronas de Adviento.
+                    </b></p>
+                  </li>
+                  <li id="foto_diez">
+                    <img src="imagenes/domingomiser.jpg" alt="Domingo de la Divina Misericordia 2021" class="plantilla">
+                  </li>
+                  <li id="foto_once">
+                    <img src="imagenes/misadoc1.jpg" alt="Docenario 2021" class="plantilla">
+                  </li>
+                  <li id="foto_doce">
+                    <img src="imagenes/misadoc2.jpg" alt="Docenario 2021" class="plantilla">
+                  </li>
+                  <li id="foto_trece">
+                    <img src="imagenes/bjocotepec.jpg" alt="Petici&oacute;n del agua" class="plantilla">
+                  </li>
+                  <li id="foto_catorce">
+                    <img src="imagenes/juevessanto2021.jpg" alt="Jueves Santo 2021" class="plantilla">
+                  </li>
+                  <li id="foto_quince">
+                    <img src="imagenes/viacrucis2021.jpg" alt="Viernes Santo 2021" class="plantilla">
+                  </li>
+                  <li id="foto_dieciseis">
+                    <img src="imagenes/camino1.jpg" alt="Petici&oacute;n del agua 2021" class="plantilla">
+                    <p><b>Rumbo a la encomienda para llevar a cabo la misa para pedir el agua.
+                    </b></p>
+                  </li>
+                  <li id="foto_diecisiete">
+                    <img src="imagenes/camino2.jpg" alt="Petici&oacute;n del agua 2021" class="plantilla">
+                  </li>
+                  <li id="foto_dieciocho">
+                    <img src="imagenes/camino3.jpg" alt="Petici&oacute;n del agua 2021" class="plantilla">
+                  </li>
+                  <li id="foto_diecinueve">
+                    <img src="imagenes/camino4.jpg" alt="Petici&oacute;n del agua 2021" class="plantilla">
+                  </li>
+                  <li id="foto_veinte">
+                    <img src="imagenes/camino3.jpg" alt="Petici&oacute;n del agua 2021" class="plantilla">
+                  </li>
+                  <li id="foto_veintiuno">
+                    <img src="imagenes/camino4.jpg" alt="Petici&oacute;n del agua 2021" class="plantilla">
+                  </li>
+                  <li id="foto_veintidos">
+                    <img src="imagenes/camino5.jpg" alt="Petici&oacute;n del agua 2021" class="plantilla">
+                  </li>
+                </ul>
+                
+                <ul class="menu">
+                  <li>
+                    <a href="#foto_uno">1</a>
+                  </li>
+                  <li>
+                    <a href="#foto_dos">2</a>
+                  </li>
+                   <li>
+                    <a href="#foto_tres">3</a>
+                  </li>
+                  <li>
+                    <a href="#foto_cuatro">4</a>
+                  </li>
+                  <li>
+                    <a href="#foto_cinco">5</a>
+                  </li>
+                  <li>
+                    <a href="#foto_seis">6</a>
+                  </li>
+                  <li>
+                    <a href="#foto_siete">7</a>
+                  </li>
+                  <li>
+                    <a href="#foto_ocho">8</a>
+                  </li>
+                  <li>
+                    <a href="#foto_nueve">9</a>
+                  </li>
+                   <li>
+                    <a href="#foto_diez">10</a>
+                  </li>
+                   <li>
+                    <a href="#foto_once">11</a>
+                  </li>
+                   <li>
+                    <a href="#foto_doce">12</a>
+                  </li>
+                   <li>
+                    <a href="#foto_trece">13</a>
+                  </li>
+                   <li>
+                    <a href="#foto_catorce">14</a>
+                  </li>
+                   <li>
+                    <a href="#foto_quince">15</a>
+                  </li>
+                   <li>
+                    <a href="#foto_dieciseis">16</a>
+                  </li>
+                   <li>
+                    <a href="#foto_diecisiete">17</a>
+                  </li>
+                   <li>
+                    <a href="#foto_dieciocho">18</a>
+                  </li>
+                  <li>
+                    <a href="#foto_diecinueve">19</a>
+                  </li>
+                  <li>
+                    <a href="#foto_veinte">20</a>
+                  </li>
+                  <li>
+                    <a href="#foto_veintiuno">21</a>
+                  </li>
+                  <li>
+                    <a href="#foto_veintidos">22</a>
+                  </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Catequesis -->
+        <section id="catequesis">
+            <h1><marquee behavior="alternate">LA CATEQUESIS</marquee></h1>
+            <div class="contenedor-tabla">
+            <h1><marquee>FORMACIÓN ESCOLARIZADA DE CATEQUESIS</marquee></h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>EDAD</th>
+                        <th>NIVEL</th>
+                        <th>LIBRO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7 a&ntilde;os</td>
+                        <td>Iniciaci&oacute;n 1</td>
+                        <td>Despacito</td>
+                    </tr>
+                    <tr>
+                        <td>8 a&ntilde;os</td>
+                        <td>Iniciaci&oacute;n 2</td>
+                        <td>Un paso al frente</td>
+                    </tr>
+                    <tr>
+                        <td>9-13 a&ntilde;os</td>
+                        <td>Eucarist&iacute;a</td>
+                        <td>Vengan a cenar conmigo</td>
+                    </tr>
+                    <tr>
+                        <td>13 a&ntilde;os</td>
+                        <td>Post-Eucarist&iacute;a</td>
+                        <td>Tambi&eacute;n yo soy tu pueblo,Señor</td>
+                    </tr>
+                    <tr>
+                        <td>18 a&ntilde;os</td>
+                        <td>Confirmaci&oacute;n</td>
+                        <td>Yo les dar&eacute mi esp&iacute;ritu</td>
+                    </tr>
+               </tbody>
+               <tfoot>
+                   <tr>
+                        <td colspan="3"><h4>Los cursos son abiertos a cualquier persona que desee participar</h4></td>
+                   </tr>
+               </tfoot>
+            </table>
+            </div>
+            <div class="contenedor-actividad">
+                <h1><marquee>ACTIVIDADES</marquee></h1>
+                <div class="container2">
+                    <ul class="slider2">
+                        <li id="foto1">
+                            <img src="imagenes/catequesis1.jpg" alt="Catequesis en la parroquia">
+                            <p>La catequesis es sinónimo de alegría, de enseñanza de fe y esperanza en compañía del Buen Pastor JESÚS. 
+                            </p>
+                        </li>
+                        <li id="foto2">
+                            <img src="imagenes/bautizos.jpg" alt="Bautizos">
+                            <p>Bautismos en el Templo Parroquial. Año 2019.
+                            </p>
+                        </li>
+                        <li id="foto3">
+                            <img src="imagenes/comunidad.jpg" alt="San Isidro">
+                            <p>Jóvenes recibiendo el Sacramento de la Confirmación en la Comunidad de San Isidro Campechero.
+                            </p>
+                        </li>
+                        <li id="foto4">
+                            <img src="imagenes/confirmacion1.jpg" alt="Confirmacion Rio Grande">
+                            <p>Sacramento de la Confirmación en el Centro de Diocesáno de Pastoral.
+                            </p>
+                        </li>
+                        <li id="foto5">
+                            <img src="imagenes/navidad.jpg" alt="Diciembre">
+                            <p>Representaciones previas a navidad (Año 2018). 
+                            </p>
+                        </li>                   
+                        </li>
+                        <li id="foto6">
+                            <img src="imagenes/participacion1.jpg" alt="Rumbo a la Encomienda">                      
+                        </li>
+                        <li id="foto7">
+                            <img src="imagenes/rumbo1.jpg" alt="Rumbo a la encomienda">                      
+                        </li>
+                         <li id="foto8">
+                            <img src="imagenes/catequesis6.jpg" alt="En la encomienda">                      
+                        </li>
+                        <li id="foto9">
+                            <img src="imagenes/calendario2.jpg" alt="Datos para la catequesis">
+                            <p>Requisitos, pláticas prebautismales y fechas de bautizos por mes (Año 2021).
+                            </p> 
+                         <li id="foto10">
+                            <img src="imagenes/calendario1.jpg" alt="Datos de retiros">                      
+                        </li>
+                         <li id="foto11">
+                            <img src="imagenes/calendario3.jpg" alt="En la encomienda">                      
+                        </li>
+                      </ul>
+
+                    <ul class="menu2">
+                        <li>
+                          <a href="#foto1">1</a>
+                        </li>
+                        <li>
+                          <a href="#foto2">2</a>
+                        </li>
+                         <li>
+                          <a href="#foto3">3</a>
+                        </li>
+                        <li>
+                          <a href="#foto4">4</a>
+                        </li>
+                        <li>
+                          <a href="#foto5">5</a>
+                        </li>
+                        <li>
+                          <a href="#foto6">6</a>
+                        </li>
+                        <li>
+                          <a href="#foto7">7</a>
+                        </li>
+                        <li>
+                          <a href="#foto8">8</a>
+                        </li>
+                         <li>
+                          <a href="#foto9">9</a>
+                        </li>
+                        <li>
+                          <a href="#foto10">10</a>
+                        </li>
+                        <li>
+                          <a href="#foto11">11</a>
+                        </li>
+                    </ul>
+                </div>	
+            </div>
+        </section>
+
+        <!-- Misas y Celebraciones -->
+        <section id="mice">
+            <h1><marquee behavior="alternate">MISAS Y CELEBRACIONES</marquee></h1>
+            <div class="container">
+                <ul class="slider">
+                    <li id="f1">
+                        <img src="imagenes/misario.jpg" alt="Misa en el rio" class="plantilla">
+                        <p><b>Misa para pedir el agua, año 2019. En el r&iacute;o de la comunidad.
+                        </b></p>
+                    </li>
+                    <li id="f2">
+                        <img src="imagenes/misatemplo1.jpg" alt="MISA TEMPLO PARROQUIAL" class="plantilla">
+						<p><b>Misa ordinaria después de Hora Santa en Jueves.
+                        </b></p>
+                    </li>
+                    <li id="f3">
+                        <img src="imagenes/misadocenario.jpg" alt="Docenario a la Virgen" class="plantilla">
+						<p><b>Misa en el primer d&iacute;a del docenario a la Virgen de Guadalupe &#40;01 de mayo de 2021&#41;.
+                        </b></p>
+                    </li>
+                    <li id="f4">
+                        <img src="imagenes/misa2021encomienda.jpg" alt="Misa en zapotal" class="plantilla">
+						<p><b>Misa en el Cerro de la Cometa, en la comunidad de Santiago Jocotepec. &#40Año 2021&#41.
+                        </b></p>
+                    </li>
+                    <li id="f5">
+                        <img src="imagenes/encomienda1.jpg" alt="Misa en la encomienda" class="plantilla">
+						<p><b>En la Capilla de la Playa la Encomienda. Año 2019. 
+                        </b></p>
+                    </li>
+                    <li id="f6">
+                        <img src="imagenes/encomienda2021.jpg" alt="En la Encomienda" class="plantilla">
+                    </li>
+                    <li id="f7">
+                        <img src="imagenes/misainicio.jpg" alt="Misa de inicio de mes" class="plantilla">
+                    </li>
+                     <li id="f8">
+                        <img src="imagenes/misaviernessanto.jpg" alt="Viernes Santo 2021" class="plantilla">
+                    </li>
+                    <li id="f9">
+                        <img src="imagenes/misaviernessanto2.jpg" alt="Viernes Santo 2021" class="plantilla">
+                    </li>
+                </ul>
+
+                <ul class="menu">
+                    <li>
+                      <a href="#f1">1</a>
+                    </li>
+                    <li>
+                      <a href="#f2">2</a>
+                    </li>
+                     <li>
+                      <a href="#f3">3</a>
+                    </li>
+                    <li>
+                      <a href="#f4">4</a>
+                    </li>
+                    <li>
+                      <a href="#f5">5</a>
+                    </li>
+                    <li>
+                      <a href="#f6">6</a>
+                    </li>
+                    <li>
+                      <a href="#f7">7</a>
+                    </li>
+                    <li>
+                      <a href="#f8">8</a>
+                    </li>
+                    <li>
+                      <a href="#f9">9</a>
+                    </li>
+                </ul>
+            </div>
+            <h3>"No vamos a la Misa para dar nada a Dios, sino para recibir de &Eacute;l aquello de lo 
+                que tenemos necesidad".</h3><br>
+            <h4>&#45PAPA FRANCISCO&#45</h4>
+        </section>
+<!--  
+        Comunidades
+        <section id="comunidades">
+            <div class="comunidades">
+                <h1>COMUNIDADES</h1>
+            </div>
+        </section>
+
+        Capillas 
+        <section id="capillas">
+            <div class="capillas">
+                <h1>CAPILLAS</h1>
+            </div>
+        </section> -->
+
+        <!-- Contacto y horarios -->
+        <section id="contacto">
+            <h1><marquee behavior="alternate">CONTACTO</marquee></h1>
+            <div class="contacto-izq">
+                <div class="izq">
+                <table>
+                    <thead>
+                        <th colspan="3">DIRECTORIO</th>
+                    </thead>
+                    <tr>
+                        <td>Tel&eacute;fono</td>
+                        <td>Direcci&oacute;n</td>
+                        <td>Redes sociales</td>
+                    </tr>
+                    <tr>
+                        <td>Cel.9541535912</td>
+                        <td><a href="https://goo.gl/maps/WMtFhW1M9TYquHFT6" target="_blank">Col. Tepeyac. Rio Grande, Oaxaca,México</td>
+                        <td>GMAIL: parriogrande18@gmail.com<br>FACEBOOK: Parroquia Santa Mar&iacute;a de Guadalupe.</td>
+                    </tr>
+                    <tr>
+                        <td>Cel.9545856113</td>
+                        <td>Col. Benito Juárez. Rio Grande, Oaxaca, México</td>
+                        <td>Centro Diocesano de Pastoral</td>
+                    </tr>
+				</table>
+                </div>
+                <div class="der">
+                    <img src="imagenes/rosas.jpg" alt="Virgen">
+                </div>
+                <!-- <div class="der">
+                    <h1>MENSAJES</h1>
+                <form action="" method="POST">
+                    <div class="form-block">
+                        <input type="text" name="nombre" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="form-block">
+                        <input type="email" name="email" class="form-control" placeholder="E-mail">
+                    </div>
+                    <div class="form-block">
+                        <textarea name="mensaje" placeholder="Mensaje"></textarea>
+                    </div>
+                    <div class="form-block bloque-ultimo">
+                        <input type="submit" value="Enviar" class="boton-negro">
+                    </div>	
+                </form>
+                </div> -->
+            </div>
+            <div class="horario-der">
+                <h1>HORARIOS DE LA OFICINA PARROQUIAL</h1>
+				<img src="imagenes/tabla1.jpg" alt="Horarios de la oficina" width="80%">
+            </div>
+            <div class="ubicacion">
+                <!-- <iframe width="1343" height="404" id="gmap_canvas" src="https://maps.google.com/maps?width=1343&amp;height=404&amp;hl=en&amp;q=%20Rio%20Grande,%20Oaxaca+(Parroquia)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> -->
+                <iframe width="1341" height="404" id="gmap_canvas" src="https://maps.google.com/maps?width=1341&amp;height=404&amp;hl=en&amp;q=%20Rio%20Grande,%20Oaxaca+(iglesia)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> 
+            </div>
+        </section>
+
+        <!-- Logos e Informacion -->
+        <footer>
+            <div class="logo-umar">
+                <a href="https://www.expedia.mx/Rio-Grande.dx6353930" target="_blank">
+                    <img src="imagenes/Riograndeparroquia.jpg" alt="Rio Grande Oaxaca"width="95%">
+                </a>
+            </div>
+            <div class="logo-travel">
+                <a href="http://www.oaxaca.travel/index.php/es/" target="_blank">
+                    <img src="imagenes/travel.jpg" alt="Oaxaca Travel" width="75%">
+                </a>
+            </div>
+            <div class="datos">
+                <ul class="persona">
+                    <h2>Equipo sacerdotal actual</h2><br>
+                    <li>Pbro. Armando Mu&ntilde;oz Jarqu&iacute;n.</li>
+                    <li>Pbro. Esa&uacute; Santiago V&aacute;zquez.</li><br><br>
+                    <li>Rio Grande, Oaxaca</li>
+                </ul>
+                <ul class="social">
+                    <h3>Redes Sociales</h3>
+                    <li><img src="imagenes/facebook-brands.svg" alt="facebook"></li>
+                    <li><img src="imagenes/twitter-brands.svg" alt="twitter"></li>
+                    <li><img src="imagenes/youtube-brands.svg" alt="youtube"></li>
+                </ul>
+            </div>
+            <div class="barra-footer">
+               <h3>&copy; Derechos Reservados - 2021</h3> 
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
